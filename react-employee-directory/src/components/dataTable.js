@@ -32,3 +32,5 @@ const dataTable = () => {
             </div>
     );
 }
+
+export default dataTable;

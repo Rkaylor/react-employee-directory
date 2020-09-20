@@ -52,4 +52,4 @@ const DataBody = () => {
   );
 }
 
-export default DataBody;
+export default DataBody; 

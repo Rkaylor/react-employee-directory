@@ -1,36 +1,43 @@
 import React, { useContext } from "react";
-import dataBody from "./dataBody";
+import DataBody from "./dataBody";
+import "../styles/DataTable.css";
 import DataAreaContext from "../utils/DataAreaContext";
 
-const dataTable = () => {
-    const context = useContext(DataAreaContext);
+const DataTable = () => {
+  const context = useContext(DataAreaContext);
 
-    return(
+  return (
 
-        <div className="datatable mt-5">
-        <table id="table" className="table table-striped table-hover table-condensed">
-            <thead>
-                <tr>
-                    {context.developersState.headings.map(({ name, width}) => {
-                return(
-                    <th className="col" key={name} style={{ width }} onClick={() => {
+    <div className="datatable mt-5">
+      <table
+        id="table"
+        className="table table-striped table-hover table-condensed"
+      >
+        <thead>
+          <tr>
+            {context.developerState.headings.map(({ name, width }) => {
+              return (
+                <th
+                  className="col"
+                  key={name}
+                  style={{ width }}
+                  onClick={() => {
+                    // context.handleSort(name.toLowerCase());
+                    context.handleSort(name);
+                  }}
+                >
+                  {name}
+                  <span className="pointer"></span>
+                </th>
+              );
+            })}
+          </tr>
+        </thead>
 
-                        context.handleSort(name);
-                    }}
-                    >
-                        {name}
-                        <span className="pointer"></span>
-                        </th>
-                );
-                
-                    })}
-                </tr>
-            </thead>
-
-            <dataBody />
-            </table>
-            </div>
-    );
+        <DataBody />
+      </table>
+    </div>
+  );
 }
 
-export default dataTable;
+export default DataTable;

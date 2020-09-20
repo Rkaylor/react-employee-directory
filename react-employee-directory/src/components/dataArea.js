@@ -78,7 +78,7 @@ const dataArea = () => {
               setDeveloperState({ ...developerState, filteredUsers: filteredList });
             };
           
-            ///https://stackoverflow.com/questions/53120972/how-to-call-loading-function-with-react-useeffect-only-once
+            
             useEffect(() => {
               API.getUsers().then(results => {
                 console.log(results.data.results);
@@ -96,13 +96,13 @@ const dataArea = () => {
               >
                 <Nav />
                 <div className="data-area">
-                  {developerState.filteredUsers.length > 0 ? <DataTable /> : <div></div>}
+                  {developerState.filteredUsers.length > 0 ? <dataTable /> : <div></div>}
                 </div>
               </DataAreaContext.Provider>
             );
           };
         }
-          export default DataArea;
+          export default dataArea;
 
 
 

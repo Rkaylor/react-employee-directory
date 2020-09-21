@@ -19,7 +19,6 @@
     "deploy": "gh-pages -d master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": "react-app"

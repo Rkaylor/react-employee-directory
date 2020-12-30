@@ -16,8 +16,8 @@ npm i
 npm run test
 
 # Repository
-This repository is hosted in GitHub and you may access it at https://github.com/Rkaylor/react-employee-directory
-You can visit the page at this link https://rkaylor.github.io/react-employee-directory/
+- This repository is hosted in GitHub and you may access it at https://github.com/Rkaylor/react-employee-directory
+- You can visit the page at this link https://rkaylor.github.io/react-employee-directory/
 
 
 <img width="1784" alt="Screen Shot 2020-12-30 at 9 35 12 AM" src="https://user-images.githubusercontent.com/66392934/103358580-e6e6f900-4a83-11eb-992f-486bf59a1aae.png">

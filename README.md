@@ -18,7 +18,5 @@ npm run test
 # Repository
 This repository is hosted in GitHub and you may access it at https://rkaylor.github.io/react-employee-directory/
 
-URL
-Employee Directory
 
 <img width="1784" alt="Screen Shot 2020-12-30 at 9 35 12 AM" src="https://user-images.githubusercontent.com/66392934/103358580-e6e6f900-4a83-11eb-992f-486bf59a1aae.png">
